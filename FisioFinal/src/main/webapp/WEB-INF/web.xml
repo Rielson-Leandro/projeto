@@ -23,6 +23,10 @@
 		<servlet-name>Faces Servlet</servlet-name>
 		<url-pattern>*.xhtml</url-pattern>
 	</servlet-mapping>
+	<!-- Carregamento do Hibernate -->
+	<listener>
+		<listener-class>com.fisioFinal.util.HibernateContexto</listener-class>
+	</listener>
 	
 	<!-- Cors -->
 	<filter>
